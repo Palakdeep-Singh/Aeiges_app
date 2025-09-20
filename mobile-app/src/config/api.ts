@@ -1,5 +1,7 @@
 // API configuration
-export const API_BASE_URL = 'https://01995e0f-5717-75d4-a678-d9763bfe9c94.mocha-app.workers.dev';
+export const API_BASE_URL = __DEV__ 
+  ? 'http://localhost:5173' 
+  : 'https://01995e0f-5717-75d4-a678-d9763bfe9c94.mocha-app.workers.dev';
 
 export const API_ENDPOINTS = {
   // Auth
